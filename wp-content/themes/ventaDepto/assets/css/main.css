@@ -1,0 +1,27 @@
+
+
+/*@charset "UTF-8";*/
+
+
+.contenedor-textos-home{
+  background: red;
+  height: 800px;
+  float: left;
+}
+
+.presentacion-home{
+  padding-left: 30px;
+  padding-right: 350px;
+  padding-top: 30px;
+}
+
+.diagramacion-img{
+  float: left;
+  background: green;
+  height: 800px;
+}
+
+.diagramacion-img img{
+  float: left;
+  
+}
