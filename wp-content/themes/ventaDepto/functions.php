@@ -146,7 +146,7 @@ function create_post_type_fotos() {
 	register_post_type( 'Fotos',
 		array(
 			'labels' => array(
-				'name' => __( 'fotos ' ),
+				'name' => __( 'Fotos Portada' ),
 				'singular_name' => __( 'Fotos' )
 			),
 		'public' => true,
@@ -156,6 +156,25 @@ function create_post_type_fotos() {
 		)
 	);
 }
+
+
+add_action( 'init', 'create_post_type_detalle' );
+function create_post_type_detalle() {
+	register_post_type( 'Detalles',
+		array(
+			'labels' => array(
+				'name' => __( 'Detalles ' ),
+				'singular_name' => __( 'Detalles' )
+			),
+		'public' => true,
+		'has_archive' => true,
+		'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail','comments','author'),
+		'taxonomies' => array('category', 'post_tag') // this is IMPORTANT
+		)
+	);
+}
+
+
 
 if ( function_exists( 'add_theme_support' ) ) {
     add_theme_support( 'post-thumbnails' );
