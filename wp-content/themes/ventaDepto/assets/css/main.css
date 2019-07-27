@@ -2,26 +2,147 @@
 
 /*@charset "UTF-8";*/
 
+/*///////////////// Header ///////////////////*/
 
+.navbar-brand img{
+  width: 80px;
+}
+
+.bg-light{
+  border-bottom: solid 5px #333030;
+  margin-bottom: 20px;
+}
+
+/*///////////////// Cuerpo ///////////////////*/
 .contenedor-textos-home{
-  background: red;
-  height: 800px;
+  height: 2500px;
   float: left;
 }
 
 .presentacion-home{
+  margin-top: 100px;
+  margin-left: 50px;
+  border-left: solid 6px #b01919;
   padding-left: 30px;
   padding-right: 350px;
-  padding-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .diagramacion-img{
   float: left;
-  background: green;
-  height: 800px;
+  height: 2500px;
 }
 
 .diagramacion-img img{
   float: left;
-  
+}
+
+.columna-1-fotos{
+  float: left;
+  width: 50%;
+  height: 2500px;
+}
+
+.columna-2-fotos{
+
+  /*padding-top: 10px;*/
+  float: left;
+  width: 50%;
+  height: 2500px;
+}
+
+.columna-1-fotos img{
+  padding: 5px;
+  width: 100%;
+  height: auto;
+}
+
+.columna-2-fotos img{
+  padding: 5px;
+  width: 100%;
+  height: auto;
+}
+
+.hola{
+  font-size: 800px;
+}
+
+.cuerpo-blog{
+  height: 800px;
+  width: 100%;
+}
+
+/* DETALLES */
+/*
+.detalle1 :nth-child(odd){
+  border-right: solid 6px red;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 700px;
+  background-color: white;
+  height: 200px;
+  width: 100%;
+} */
+
+.contenedor-detalles{
+  padding-right: 50px;
+  width: 100%;
+}
+
+
+/* .detalle1 :nth-child(even){
+  border-right: solid 6px #b01919;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 700px;
+  background-color: white;
+  height: 200px;
+  width: 100%;
+} */
+
+.contenedor-detalles :nth-child(odd){
+    margin-top: 300px;
+    margin-right: 60px;
+    margin-left: 450px;
+}
+
+.contenedor-detalles :nth-child(odd) h1{
+    border-right: solid #333030 6px;
+    text-align: right;
+    margin-left: 0px;
+    padding-right: 30px;
+    width: 400px;
+}
+
+.contenedor-detalles :nth-child(odd) p{
+    border-right: none;
+    text-align: right;
+    padding-right: 40px;
+    width: 400px;
+}
+
+.contenedor-detalles :nth-child(even) h1{
+    border-left: solid #b01919 6px;
+    border-right: solid white 6px;
+    margin-left: 50px;
+    width: 400px;
+    padding-left: 30px;
+}
+
+.contenedor-detalles :nth-child(even) p{
+    margin-left: 50px;
+    width: 400px;
+    padding-left: 40px;
+}
+/*
+  Buscar NTH child
+*/
+
+/*////////////////////////////////////////////*/
+/*/////////////// FOOTER /////////////////////*/
+
+.cuerpo-footer{
+  height: 200px;
+  background-color: #333030;
 }
